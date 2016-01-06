@@ -85,4 +85,14 @@
     <string name="title_activity_splash">SplashActivity</string>
 
     <string name="MVC4A">SplashActivity</string>
+
+
+    <string name="string0">NoHttp例子</string>
+    <string name="string1">后台处理事件</string>
+    <string name="string2">广播事件</string>
+    <string name="string3">后台Service</string>
+
+
+
+
 </resources>
