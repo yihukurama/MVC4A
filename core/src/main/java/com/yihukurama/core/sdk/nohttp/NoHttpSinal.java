@@ -3,10 +3,7 @@ package com.yihukurama.core.sdk.nohttp;
 /**
  * Created by dengshuai on 16/1/6.
  */
-public enum NoHttpSinal {
+public class NoHttpSinal {
 
-    baseDown,
-    basePost,
-    basePut,
-    baseDelete;
+    public final static int post = -1;
 }
