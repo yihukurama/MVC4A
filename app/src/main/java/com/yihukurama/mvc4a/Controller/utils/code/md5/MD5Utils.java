@@ -1,10 +1,11 @@
-package com.yihukurama.mvc4a.Controller.utils.code.md5;
+package com.yihukurama.mvc4a.controller.utils.code.md5;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 /**
  * Created by dengshuai on 15/12/31.
+ * MD5编码的工具类
  */
 public class MD5Utils {
     /**全局数组**/

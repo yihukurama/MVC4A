@@ -1,4 +1,4 @@
-package com.yihukurama.mvc4a.View.fragment;
+package com.yihukurama.mvc4a.view.fragment;
 
 import android.content.Context;
 import android.net.Uri;

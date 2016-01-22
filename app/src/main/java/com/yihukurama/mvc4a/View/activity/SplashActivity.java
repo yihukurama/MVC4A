@@ -1,4 +1,4 @@
-package com.yihukurama.mvc4a.View.activity;
+package com.yihukurama.mvc4a.view.activity;
 
 import android.annotation.SuppressLint;
 import android.support.v7.app.ActionBar;

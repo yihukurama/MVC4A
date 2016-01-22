@@ -1,16 +1,13 @@
-package com.yihukurama.mvc4a.View.activity;
+package com.yihukurama.mvc4a.view.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Toast;
 
-import com.yihukurama.core.sdk.nohttp.NoHttpApi;
 import com.yihukurama.core.sdk.nohttp.NoHttpCallBack;
 import com.yihukurama.mvc4a.R;
-import com.yolanda.nohttp.Logger;
-import com.yolanda.nohttp.NoHttp;
-import com.yolanda.nohttp.Request;
-import com.yolanda.nohttp.RequestMethod;
+import com.yihukurama.mvc4a.view.activity.testactivity.DBActivity;
+import com.yihukurama.mvc4a.view.activity.testactivity.LoginActivity;
 import com.yolanda.nohttp.Response;
 
 public class MainActivity extends BaseActivity implements NoHttpCallBack,View.OnClickListener{
@@ -38,7 +35,7 @@ public class MainActivity extends BaseActivity implements NoHttpCallBack,View.On
 
 
         findViewById(R.id.btn_http).setOnClickListener(this);
-
+        findViewById(R.id.btn_db).setOnClickListener(this);
 
 
     }
@@ -52,22 +49,7 @@ public class MainActivity extends BaseActivity implements NoHttpCallBack,View.On
 
 
 
-    private void noHttpRequestAction(){
-        String mTargetUrl = "https://www.baidu.com";
-        RequestMethod method = RequestMethod.POST;
-        // 创建request时传入url和method
-        Request<String> mRequest= NoHttp.createStringRequest(mTargetUrl, method);
-        // github是https的请求，这里直接允许，不做证书验证，具体Https的使用请看NoHttpsActivity
-        mRequest.setAllowHttps(true);
 
-        // 设置这个请求的tag，NoHttp的请求会为你保持这个tag，在成功或者失败时返回给你
-        // mRequest.setTag(object);
-
-        // what: 用来区分请求，当多个请求使用同一个OnResponseListener时，在回调方法中会返回这个what，相当于handler的what一样
-        // request: 请求对象，包涵Cookie、Head、请求参数、URL、请求方法
-        // responseListener 请求结果监听，回调时把what原样返回
-        NoHttpApi.getRequestInstance().add(mContext, 0, mRequest, mHttpCB);// 这里的what，先用0代替，正式开发中，多个请求使用同一个Listener时，要传入不同的what，相当于handler的what一样
-    }
 
 
     /**
@@ -98,9 +80,17 @@ public class MainActivity extends BaseActivity implements NoHttpCallBack,View.On
     public void onClick(View v) {
         switch(v.getId()){
             case R.id.btn_http:
-                noHttpRequestAction();
+                Intent intent = new Intent(MainActivity.this,
+                    LoginActivity.class);
+                startActivity(intent);
+                finish();
                 break;
-
+            case R.id.btn_db:
+                Intent intent2 = new Intent(MainActivity.this,
+                        DBActivity.class);
+                startActivity(intent2);
+                finish();
+                break;
         }
     }
 }

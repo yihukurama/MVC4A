@@ -23,9 +23,6 @@ public class Mvc4aApplication extends Application {
 
         NoHttp.init(this);
 
-        // 设置默认的Cookie管理器，不设置的话NoHttp会自动替你完成Cookie的维护
-        // 设置Cookit管理器的好处是APP初始化的时候加载必要的Cookie，但是也可以在每个Request对象中添加Cookie
-//		NoHttp.setDefaultCookieManager(new MyCookieManager());
     }
 
     public static Mvc4aApplication getInstance() {

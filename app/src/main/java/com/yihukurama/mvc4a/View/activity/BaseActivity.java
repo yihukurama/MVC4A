@@ -1,8 +1,7 @@
-package com.yihukurama.mvc4a.View.activity;
+package com.yihukurama.mvc4a.view.activity;
 
 import android.app.Activity;
 import android.content.Context;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Toast;
 
