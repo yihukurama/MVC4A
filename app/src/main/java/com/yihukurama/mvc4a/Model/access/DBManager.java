@@ -11,6 +11,7 @@ import com.yihukurama.mvc4a.model.access.greendao.DaoMaster;
 import com.yihukurama.mvc4a.model.access.greendao.DaoSession;
 import com.yihukurama.mvc4a.model.data.memory.StringConstants;
 
+
 /**
  * [数据库管理类，数据采用GreenDao来实现，所有实现通过模板自动生成；通过获取daoSession来获取所有的dao，从而实现操作对象]
  * 

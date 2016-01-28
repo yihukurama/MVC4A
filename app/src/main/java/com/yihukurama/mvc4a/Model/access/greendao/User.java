@@ -6,7 +6,7 @@ package com.yihukurama.mvc4a.model.access.greendao;
  */
 public class User {
 
-    private Long index;
+    private Long INDEX;
     /** Not-null value. */
     private String AICHAID;
     private String MOBILE;
@@ -17,16 +17,41 @@ public class User {
     private String SEX;
     private String ZONE;
     private String SIGN;
+    private String BIRTHDAY;
+    private String LIGHTS;
+    private String NOTICE;
+    private String GROUP_INFO;
+    private String SLEEP_MODE;
+    private String SHAKER;
+    private String GROUP_SHAKER;
+    private String SOUND;
+    private String GROUP_SOUND;
+    private String WARING_TONE;
+    private String VALIDATE;
+    private String RECOMMEND;
+    private String SEARCHBYPHONE;
+    private String hasNewFriend;
+    private String userId;
+    private String tab1commodityHasNew;
+    private String tab2trademarkHasNew;
+    private String tab3chatHasNew;
+    private String tab4integralHasNew;
+    private String lastReceiveIntegral;
+    private String integralBalance;
+    private String BALANCE_USE;
+    private String HX_USERNAME;
+    private String HX_PASSWD;
+    private String MIN_VERSION;
 
     public User() {
     }
 
-    public User(Long index) {
-        this.index = index;
+    public User(Long INDEX) {
+        this.INDEX = INDEX;
     }
 
-    public User(Long index, String AICHAID, String MOBILE, String HEAD_URL, String NICKNAME, String EMAIL, String QRCODE, String SEX, String ZONE, String SIGN) {
-        this.index = index;
+    public User(Long INDEX, String AICHAID, String MOBILE, String HEAD_URL, String NICKNAME, String EMAIL, String QRCODE, String SEX, String ZONE, String SIGN, String BIRTHDAY, String LIGHTS, String NOTICE, String GROUP_INFO, String SLEEP_MODE, String SHAKER, String GROUP_SHAKER, String SOUND, String GROUP_SOUND, String WARING_TONE, String VALIDATE, String RECOMMEND, String SEARCHBYPHONE, String hasNewFriend, String userId, String tab1commodityHasNew, String tab2trademarkHasNew, String tab3chatHasNew, String tab4integralHasNew, String lastReceiveIntegral, String integralBalance, String BALANCE_USE, String HX_USERNAME, String HX_PASSWD, String MIN_VERSION) {
+        this.INDEX = INDEX;
         this.AICHAID = AICHAID;
         this.MOBILE = MOBILE;
         this.HEAD_URL = HEAD_URL;
@@ -36,14 +61,39 @@ public class User {
         this.SEX = SEX;
         this.ZONE = ZONE;
         this.SIGN = SIGN;
+        this.BIRTHDAY = BIRTHDAY;
+        this.LIGHTS = LIGHTS;
+        this.NOTICE = NOTICE;
+        this.GROUP_INFO = GROUP_INFO;
+        this.SLEEP_MODE = SLEEP_MODE;
+        this.SHAKER = SHAKER;
+        this.GROUP_SHAKER = GROUP_SHAKER;
+        this.SOUND = SOUND;
+        this.GROUP_SOUND = GROUP_SOUND;
+        this.WARING_TONE = WARING_TONE;
+        this.VALIDATE = VALIDATE;
+        this.RECOMMEND = RECOMMEND;
+        this.SEARCHBYPHONE = SEARCHBYPHONE;
+        this.hasNewFriend = hasNewFriend;
+        this.userId = userId;
+        this.tab1commodityHasNew = tab1commodityHasNew;
+        this.tab2trademarkHasNew = tab2trademarkHasNew;
+        this.tab3chatHasNew = tab3chatHasNew;
+        this.tab4integralHasNew = tab4integralHasNew;
+        this.lastReceiveIntegral = lastReceiveIntegral;
+        this.integralBalance = integralBalance;
+        this.BALANCE_USE = BALANCE_USE;
+        this.HX_USERNAME = HX_USERNAME;
+        this.HX_PASSWD = HX_PASSWD;
+        this.MIN_VERSION = MIN_VERSION;
     }
 
-    public Long getIndex() {
-        return index;
+    public Long getINDEX() {
+        return INDEX;
     }
 
-    public void setIndex(Long index) {
-        this.index = index;
+    public void setINDEX(Long INDEX) {
+        this.INDEX = INDEX;
     }
 
     /** Not-null value. */
@@ -118,6 +168,206 @@ public class User {
 
     public void setSIGN(String SIGN) {
         this.SIGN = SIGN;
+    }
+
+    public String getBIRTHDAY() {
+        return BIRTHDAY;
+    }
+
+    public void setBIRTHDAY(String BIRTHDAY) {
+        this.BIRTHDAY = BIRTHDAY;
+    }
+
+    public String getLIGHTS() {
+        return LIGHTS;
+    }
+
+    public void setLIGHTS(String LIGHTS) {
+        this.LIGHTS = LIGHTS;
+    }
+
+    public String getNOTICE() {
+        return NOTICE;
+    }
+
+    public void setNOTICE(String NOTICE) {
+        this.NOTICE = NOTICE;
+    }
+
+    public String getGROUP_INFO() {
+        return GROUP_INFO;
+    }
+
+    public void setGROUP_INFO(String GROUP_INFO) {
+        this.GROUP_INFO = GROUP_INFO;
+    }
+
+    public String getSLEEP_MODE() {
+        return SLEEP_MODE;
+    }
+
+    public void setSLEEP_MODE(String SLEEP_MODE) {
+        this.SLEEP_MODE = SLEEP_MODE;
+    }
+
+    public String getSHAKER() {
+        return SHAKER;
+    }
+
+    public void setSHAKER(String SHAKER) {
+        this.SHAKER = SHAKER;
+    }
+
+    public String getGROUP_SHAKER() {
+        return GROUP_SHAKER;
+    }
+
+    public void setGROUP_SHAKER(String GROUP_SHAKER) {
+        this.GROUP_SHAKER = GROUP_SHAKER;
+    }
+
+    public String getSOUND() {
+        return SOUND;
+    }
+
+    public void setSOUND(String SOUND) {
+        this.SOUND = SOUND;
+    }
+
+    public String getGROUP_SOUND() {
+        return GROUP_SOUND;
+    }
+
+    public void setGROUP_SOUND(String GROUP_SOUND) {
+        this.GROUP_SOUND = GROUP_SOUND;
+    }
+
+    public String getWARING_TONE() {
+        return WARING_TONE;
+    }
+
+    public void setWARING_TONE(String WARING_TONE) {
+        this.WARING_TONE = WARING_TONE;
+    }
+
+    public String getVALIDATE() {
+        return VALIDATE;
+    }
+
+    public void setVALIDATE(String VALIDATE) {
+        this.VALIDATE = VALIDATE;
+    }
+
+    public String getRECOMMEND() {
+        return RECOMMEND;
+    }
+
+    public void setRECOMMEND(String RECOMMEND) {
+        this.RECOMMEND = RECOMMEND;
+    }
+
+    public String getSEARCHBYPHONE() {
+        return SEARCHBYPHONE;
+    }
+
+    public void setSEARCHBYPHONE(String SEARCHBYPHONE) {
+        this.SEARCHBYPHONE = SEARCHBYPHONE;
+    }
+
+    public String getHasNewFriend() {
+        return hasNewFriend;
+    }
+
+    public void setHasNewFriend(String hasNewFriend) {
+        this.hasNewFriend = hasNewFriend;
+    }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
+
+    public String getTab1commodityHasNew() {
+        return tab1commodityHasNew;
+    }
+
+    public void setTab1commodityHasNew(String tab1commodityHasNew) {
+        this.tab1commodityHasNew = tab1commodityHasNew;
+    }
+
+    public String getTab2trademarkHasNew() {
+        return tab2trademarkHasNew;
+    }
+
+    public void setTab2trademarkHasNew(String tab2trademarkHasNew) {
+        this.tab2trademarkHasNew = tab2trademarkHasNew;
+    }
+
+    public String getTab3chatHasNew() {
+        return tab3chatHasNew;
+    }
+
+    public void setTab3chatHasNew(String tab3chatHasNew) {
+        this.tab3chatHasNew = tab3chatHasNew;
+    }
+
+    public String getTab4integralHasNew() {
+        return tab4integralHasNew;
+    }
+
+    public void setTab4integralHasNew(String tab4integralHasNew) {
+        this.tab4integralHasNew = tab4integralHasNew;
+    }
+
+    public String getLastReceiveIntegral() {
+        return lastReceiveIntegral;
+    }
+
+    public void setLastReceiveIntegral(String lastReceiveIntegral) {
+        this.lastReceiveIntegral = lastReceiveIntegral;
+    }
+
+    public String getIntegralBalance() {
+        return integralBalance;
+    }
+
+    public void setIntegralBalance(String integralBalance) {
+        this.integralBalance = integralBalance;
+    }
+
+    public String getBALANCE_USE() {
+        return BALANCE_USE;
+    }
+
+    public void setBALANCE_USE(String BALANCE_USE) {
+        this.BALANCE_USE = BALANCE_USE;
+    }
+
+    public String getHX_USERNAME() {
+        return HX_USERNAME;
+    }
+
+    public void setHX_USERNAME(String HX_USERNAME) {
+        this.HX_USERNAME = HX_USERNAME;
+    }
+
+    public String getHX_PASSWD() {
+        return HX_PASSWD;
+    }
+
+    public void setHX_PASSWD(String HX_PASSWD) {
+        this.HX_PASSWD = HX_PASSWD;
+    }
+
+    public String getMIN_VERSION() {
+        return MIN_VERSION;
+    }
+
+    public void setMIN_VERSION(String MIN_VERSION) {
+        this.MIN_VERSION = MIN_VERSION;
     }
 
 }
