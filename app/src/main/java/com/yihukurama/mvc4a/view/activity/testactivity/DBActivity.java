@@ -7,10 +7,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.yihukurama.mvc4a.model.access.greendao.User;
-import com.yihukurama.mvc4a.model.access.greendao.UserDao;
 import com.yihukurama.mvc4a.R;
 import com.yihukurama.mvc4a.model.access.DBManager;
+import com.yihukurama.mvc4a.model.access.greendao.User;
+import com.yihukurama.mvc4a.model.access.greendao.UserDao;
 import com.yihukurama.mvc4a.view.activity.BaseActivity;
 
 import java.util.ArrayList;

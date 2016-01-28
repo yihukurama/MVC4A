@@ -8,11 +8,11 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.yihukurama.core.sdk.nohttp.NoHttpCallBack;
+import com.yihukurama.mvc4a.R;
 import com.yihukurama.mvc4a.controller.api.request.RequestApi;
 import com.yihukurama.mvc4a.controller.api.request.RequestParams;
 import com.yihukurama.mvc4a.controller.api.response.Response2Bean;
-import com.yihukurama.mvc4a.model.object.responsebean.LoginResponseBean;
-import com.yihukurama.mvc4a.R;
+import com.yihukurama.mvc4a.model.object.response.LoginResponseBean;
 import com.yihukurama.mvc4a.view.activity.BaseActivity;
 import com.yolanda.nohttp.Response;
 
@@ -90,7 +90,7 @@ public class LoginActivity extends BaseActivity implements NoHttpCallBack,View.O
         Log.i("NoHttp", "发送成功" + response.get().toString());
 
 
-        LoginResponseBean loginResponseBean = Response2Bean.toLoginBean(response);
+        //LoginResponseBean loginResponseBean = Response2Bean.toLoginBean(response);
 
         //用loginResponseBean做相应的业务处理
 

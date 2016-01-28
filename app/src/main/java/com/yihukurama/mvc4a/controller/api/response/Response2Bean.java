@@ -3,7 +3,7 @@ package com.yihukurama.mvc4a.controller.api.response;
 import android.util.Log;
 
 import com.yihukurama.core.utils.JsonUtil;
-import com.yihukurama.mvc4a.model.object.responsebean.LoginResponseBean;
+import com.yihukurama.mvc4a.model.object.response.LoginResponseBean;
 import com.yolanda.nohttp.Response;
 
 /**
