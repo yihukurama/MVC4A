@@ -91,6 +91,7 @@
     <string name="string1">后台处理事件</string>
     <string name="string2">广播事件</string>
     <string name="string3">后台Service</string>
+    <string name="string11">sdcard文件系统例子</string>
     <string name="string8">GreenDao操作数据库例子</string>
 
     <string name="string4">增加或更新记录</string>

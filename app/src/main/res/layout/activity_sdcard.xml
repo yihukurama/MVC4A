@@ -9,41 +9,33 @@
         android:orientation="vertical" >
 
         <Button
-            android:id="@+id/btn_http"
+            android:id="@+id/btn_init"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/string0" />
+            android:text="初始化文件目录" />
 
         <Button
-            android:id="@+id/btn_db"
+            android:id="@+id/btn_create_file"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/string8" />
+            android:text="创建文件目录" />
 
         <Button
-            android:id="@+id/btn_sdcard"
+            android:id="@+id/btn_delete_file"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/string11" />
+            android:text="删除文件目录" />
 
         <Button
-            android:id="@+id/btn_task"
+            android:id="@+id/btn_check"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/string1" />
-
-        <Button
-            android:id="@+id/btn_brocast"
+            android:text="检测是否存在文件目录" />
+        <TextView
+            android:id="@+id/text_result"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/string2" />
-
-        <Button
-            android:id="@+id/btn_service"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/string3" />
-
+            android:text="结果"/>
 
     </LinearLayout>
 
