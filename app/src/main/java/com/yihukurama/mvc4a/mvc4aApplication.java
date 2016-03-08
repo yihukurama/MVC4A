@@ -2,6 +2,7 @@ package com.yihukurama.mvc4a;
 
 import android.app.Application;
 
+import com.yihukurama.core.MVC4A;
 import com.yolanda.nohttp.Logger;
 import com.yolanda.nohttp.NoHttp;
 
@@ -22,6 +23,7 @@ public class Mvc4aApplication extends Application {
         Logger.setDebug(true);// 开始NoHttp的调试模式，这样就能看到请求过程和日志
 
         NoHttp.init(this);
+        MVC4A.init(this);
 
     }
 

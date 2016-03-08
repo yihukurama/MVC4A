@@ -3,15 +3,16 @@ package com.yihukurama.mvc4a.view.activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.webkit.WebView;
 
-import com.yihukurama.core.sdk.nohttp.NoHttpCallBack;
 import com.yihukurama.mvc4a.R;
 import com.yihukurama.mvc4a.view.activity.testactivity.DBActivity;
 import com.yihukurama.mvc4a.view.activity.testactivity.LoginActivity;
-import com.yolanda.nohttp.Response;
+import com.yihukurama.mvc4a.view.activity.testactivity.SdcardActivity;
+import com.yihukurama.mvc4a.view.activity.testactivity.WebActivity;
 
-public class MainActivity extends BaseActivity implements NoHttpCallBack,View.OnClickListener{
-    private NoHttpCallBack mHttpCB;
+public class MainActivity extends BaseActivity implements View.OnClickListener{
+
 
 
     @Override
@@ -36,13 +37,14 @@ public class MainActivity extends BaseActivity implements NoHttpCallBack,View.On
 
         findViewById(R.id.btn_http).setOnClickListener(this);
         findViewById(R.id.btn_db).setOnClickListener(this);
-
+        findViewById(R.id.btn_sdcard).setOnClickListener(this);
+        findViewById(R.id.btn_web).setOnClickListener(this);
 
     }
 
 
     private void initData() {
-        mHttpCB = this;
+
 
     }
 
@@ -52,29 +54,7 @@ public class MainActivity extends BaseActivity implements NoHttpCallBack,View.On
 
 
 
-    /**
-     * nohttp 请求成功
-     * @param what   请求id
-     * @param response
-     */
-    @Override
-    public void onSucceed(int what, Response response) {
-        showToastLong(response.get().toString());
-    }
 
-    /**
-     * nohttp 请求失败
-     * @param what
-     * @param url
-     * @param tag
-     * @param message
-     * @param responseCode
-     * @param networkMillis
-     */
-    @Override
-    public void onFailed(int what, String url, Object tag, CharSequence message, int responseCode, long networkMillis) {
-       showToastLong(message.toString());
-    }
 
     @Override
     public void onClick(View v) {
@@ -90,6 +70,18 @@ public class MainActivity extends BaseActivity implements NoHttpCallBack,View.On
                         DBActivity.class);
                 startActivity(intent2);
                 finish();
+                break;
+            case R.id.btn_sdcard:
+                Intent intent3 = new Intent(MainActivity.this,
+                        SdcardActivity.class);
+                startActivity(intent3);
+                finish();
+                break;
+            case R.id.btn_web:
+                Intent intent4 = new Intent(MainActivity.this,
+                        WebActivity.class);
+                startActivity(intent4);
+
                 break;
         }
     }
