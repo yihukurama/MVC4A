@@ -34,7 +34,7 @@ public class DBActivity extends BaseActivity implements View.OnClickListener{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dbactivity);
+        setContentView(R.layout.activity_db);
 
         //初始化控件
         initView();
