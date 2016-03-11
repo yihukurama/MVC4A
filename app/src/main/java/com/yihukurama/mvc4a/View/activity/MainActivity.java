@@ -3,11 +3,11 @@ package com.yihukurama.mvc4a.view.activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.webkit.WebView;
 
 import com.yihukurama.mvc4a.R;
 import com.yihukurama.mvc4a.view.activity.testactivity.DBActivity;
 import com.yihukurama.mvc4a.view.activity.testactivity.LoginActivity;
+import com.yihukurama.mvc4a.view.activity.testactivity.PictureActivity;
 import com.yihukurama.mvc4a.view.activity.testactivity.SdcardActivity;
 import com.yihukurama.mvc4a.view.activity.testactivity.WebActivity;
 
@@ -39,6 +39,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener{
         findViewById(R.id.btn_db).setOnClickListener(this);
         findViewById(R.id.btn_sdcard).setOnClickListener(this);
         findViewById(R.id.btn_web).setOnClickListener(this);
+        findViewById(R.id.btn_pic).setOnClickListener(this);
 
     }
 
@@ -81,6 +82,12 @@ public class MainActivity extends BaseActivity implements View.OnClickListener{
                 Intent intent4 = new Intent(MainActivity.this,
                         WebActivity.class);
                 startActivity(intent4);
+
+                break;
+            case R.id.btn_pic:
+                Intent intent5 = new Intent(MainActivity.this,
+                        PictureActivity.class);
+                startActivity(intent5);
 
                 break;
         }

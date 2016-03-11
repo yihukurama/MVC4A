@@ -65,7 +65,7 @@
                 android:value="com.yihukurama.mvc4a.view.activity.BaseActivity" />
         </activity>
         <activity
-            android:name=".view.activity.GuideActivity"
+            android:name=".view.activity.testactivity.WebActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_guide"
             android:parentActivityName=".view.activity.BaseActivity"
@@ -75,7 +75,7 @@
                 android:value="com.yihukurama.mvc4a.view.activity.BaseActivity" />
         </activity>
         <activity
-            android:name=".view.activity.testactivity.WebActivity"
+            android:name=".view.activity.testactivity.PictureActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_guide"
             android:parentActivityName=".view.activity.BaseActivity"
